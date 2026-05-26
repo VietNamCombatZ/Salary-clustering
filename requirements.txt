@@ -11,6 +11,7 @@ pyarrow                # đọc/ghi parquet (input và intermediate format)
 # ====================================================
 scikit-learn           # TfidfVectorizer, TruncatedSVD, OneHotEncoder, StandardScaler, MiniBatchKMeans, metrics
 joblib                 # save/load fitted transformers và model
+sentence_transformers
 
 # ====================================================
 # Vietnamese NLP
