@@ -1,0 +1,32 @@
+# ====================================================
+# Data manipulation
+# ====================================================
+pandas
+numpy
+scipy
+pyarrow                # đọc/ghi parquet (input và intermediate format)
+
+# ====================================================
+# Machine learning
+# ====================================================
+scikit-learn           # TfidfVectorizer, TruncatedSVD, OneHotEncoder, StandardScaler, MiniBatchKMeans, metrics
+joblib                 # save/load fitted transformers và model
+
+# ====================================================
+# Vietnamese NLP
+# ====================================================
+pyvi                   # ViTokenizer — tokenize tiếng Việt ("kinh doanh" → "kinh_doanh")
+
+# ====================================================
+# Visualization
+# ====================================================
+matplotlib
+seaborn
+wordcloud              # word cloud cho TF-IDF terms (notebook 03)
+squarify               # treemap phân bố industry (notebook 03)
+umap-learn             # UMAP 2D visualization (notebook 03, 04, 05)
+
+# ====================================================
+# Utilities
+# ====================================================
+tqdm                   # progress bar cho tokenize 449k JD
