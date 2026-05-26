@@ -1,0 +1,66 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.jupyter/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Data (lớn, không commit) =====
+data/raw/*.parquet
+data/raw/*.csv
+data/clean/*.parquet
+data/clean/*.csv
+data/clean/*.npy
+data/cleaned/
+
+# Giữ folder rỗng để clone xong vẫn có structure
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+
+# ===== Models (lớn, không commit) =====
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.png
+!models/.gitkeep
+
+# ===== Sentence-Transformers cache =====
+.cache/
+sentence-transformers/
+
+# ===== Hugging Face cache =====
+.huggingface/
+huggingface_hub/
+
+# ===== Misc output =====
+*.log
+*.tmp
+*.bak
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ===== OS junk =====
+*.lnk
+Desktop.ini
