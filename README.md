@@ -13,7 +13,8 @@ CUOIKI_KHDL/
 ├── models/               # output từ 03 & training: pca_text.joblib, meta_scaler.joblib, kmeans.joblib, best_params.joblib
 ├── notebook/
 │   ├── 01_split_and_export.ipynb       # split 90/10 stratified by year
-│   ├── 02_clean_data.ipynb             # parse salary, clean text, dedup, stopwords
+│   ├── 02_1_clean_data.ipynb             # parse salary, clean text, dedup, stopwords
+│   ├── 02_2_clean_data_overview.ipynb    # overview data after cleaning
 │   ├── 03_feature_engineering.ipynb    # categorical mapping, embedding, PCA
 │   ├── training.ipynb                  # Optuna tune + train KMeans K=9
 │   └── testing.ipynb                   # inference-only pipeline trên test set
@@ -90,7 +91,8 @@ Chạy **tuần tự** các notebook trong thư mục `notebook/`:
 | # | Notebook | Input | Output | Thời gian |
 |---|----------|-------|--------|-----------|
 | 1 | `01_split_and_export.ipynb` | `data/raw/data.parquet` | `data/raw/raw_data_{train,test}.{csv,parquet}` | ~40s |
-| 2 | `02_clean_data.ipynb` | `raw_data_*.parquet` | `data/clean/clean_data_{train,test}.{csv,parquet}` | ~5 phút |
+| 2 | `02_1_clean_data.ipynb` | `raw_data_*.parquet` | `data/clean/clean_data_{train,test}.{csv,parquet}` | ~5 phút |
+| 2 | `02_2_clean_data_overview.ipynb` | `data/clean/clean_data_{train,test}.{csv,parquet}` | các biểu đồ | ~5 phút |
 | 3 | `03_feature_engineering.ipynb` | `clean_data_*.csv` | `data/clean/{train,test}_processed.parquet`, `X_text_pca_*.npy`, `models/pca_text.joblib` | **~30 phút** (embedding) |
 | 4 | `training.ipynb` | output của 03 | `models/{meta_scaler,kmeans,best_params}.joblib` + cluster labels cho train | ~15 phút (Optuna + final fit) |
 | 5 | `testing.ipynb` | model `.joblib` + `*_processed.parquet` + `X_text_pca_*.npy` | `data/clean/Test_with_cluster.csv` + plots | ~3 phút |
