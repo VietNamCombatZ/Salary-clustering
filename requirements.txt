@@ -26,6 +26,7 @@ seaborn
 wordcloud              # word cloud cho TF-IDF terms (notebook 03)
 squarify               # treemap phân bố industry (notebook 03)
 umap-learn             # UMAP 2D visualization (notebook 03, 04, 05)
+optuna
 
 # ====================================================
 # Utilities
