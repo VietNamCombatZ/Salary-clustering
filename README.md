@@ -80,6 +80,9 @@ ipykernel>=6.25
 
 ### Bước 3: Tải data gốc
 
+link dataset:
+https://huggingface.co/datasets/tinixai/vietnamese-job-descriptions?fbclid=IwY2xjawReSItleHRuA2FlbQIxMABicmlkETFMdnV6cWRZZWxPQnRDWldDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHjHX7IzdvIDJuhvemwHSWzyZu8c314CdPSjWRI8u8BkxS5_OVKSg3b2OhKCP_aem_rk-hwsxKBue3L8w_dzoJ7A
+
 Đặt file `data.parquet` vào folder `data/raw/`.
 
 ---
